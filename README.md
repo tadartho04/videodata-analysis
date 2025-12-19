@@ -53,3 +53,9 @@ These features improve interpretability and make the data more suitable for anal
 ---
 
 ## 📦 Project Files
+
+Videodata.csv                 → Raw dataset
+data_dictionary.md            → Column descriptions
+data_cleaning.py              → Data cleaning & feature engineering script
+final_cleaned_videodata.csv   → Final cleaned dataset
+README.md                     → Project documentation
