@@ -59,3 +59,19 @@ data_dictionary.md            → Column descriptions
 data_cleaning.py              → Data cleaning & feature engineering script
 final_cleaned_videodata.csv   → Final cleaned dataset
 README.md                     → Project documentation
+
+---
+
+## ▶️ How to Run the Code
+1. Make sure Python and Pandas are installed  
+2. Place all files in the same directory  
+3. Run the script:
+
+```bash
+python data_cleaning.py
+
+---
+4.The cleaned dataset will be saved as:
+
+final_cleaned_videodata.csv
+final_cleaned_videodata.csv
