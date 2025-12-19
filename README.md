@@ -1,26 +1,55 @@
-# Videodata Dataset – Data Preparation (Task 1)
+# Videodata Analysis – Task 1 (Data Wrangling)
 
-## Dataset Overview
-The Videodata dataset contains demographic and employment-related information of individuals.
-The dataset is primarily used to analyze factors that influence income levels.
+## 📌 Project Overview
+This project focuses on **data understanding, data quality assessment, data cleaning, and feature engineering** using a CSV dataset (`Videodata.csv`).  
+The goal of Task-1 is to transform raw data into a **clean, analysis-ready dataset** with proper documentation.
 
-## Files in this Project
-- Videodata.csv: Raw dataset provided for analysis
-- data_dictionary.md: Description of each column in the dataset
-- README.md: Overview and observations of the dataset
+This task was completed as part of an internship assignment to demonstrate foundational data wrangling skills.
 
-## Initial Observations
-After manually reviewing the dataset, the following observations were noted:
+---
 
-- Some columns contain missing values represented by '?'
-- The dataset contains both numerical and categorical variables
-- Capital-gain and capital-loss columns contain many zero values
-- The income column appears to be the target variable
+## 📂 Dataset Description
+- **Dataset name:** Videodata.csv  
+- **Type:** Tabular CSV data  
+- **Content:** Demographic and work-related attributes such as age, working hours, capital gain/loss, etc.
 
-## Planned Data Cleaning Steps
-The following steps will be performed in the next phase:
+A detailed explanation of each column is provided in **`data_dictionary.md`**.
 
-- Replace '?' with proper missing values
-- Handle missing data appropriately
-- Remove duplicate records
-- Save a cleaned version of the dataset
+---
+
+## 🧠 Task Objectives
+The following objectives were achieved:
+
+1. Understand the dataset structure and columns  
+2. Identify data quality issues (missing values, duplicates, formatting issues)  
+3. Clean and preprocess the dataset  
+4. Perform basic feature engineering  
+5. Generate a final cleaned dataset ready for analysis  
+
+---
+
+## 🛠️ Data Cleaning Steps
+The following cleaning operations were performed using Python (Pandas):
+
+- Replaced invalid symbols (`?`) with proper missing values
+- Removed duplicate rows
+- Trimmed extra spaces from text columns
+- Checked and handled missing values
+- Ensured consistent formatting across columns
+
+All cleaning logic is implemented in **`data_cleaning.py`**.
+
+---
+
+## 🔧 Feature Engineering
+New meaningful features were created to enhance the dataset:
+
+- **Age Group:** Categorized individuals into age brackets (Young, Adult, Senior, Old)
+- **Work Hours Category:** Classified working hours into Part-time, Full-time, and Overtime
+- **Capital Activity:** Identified whether an individual had capital gain, loss, or none
+
+These features improve interpretability and make the data more suitable for analysis.
+
+---
+
+## 📦 Project Files
