@@ -21,10 +21,10 @@ df.to_csv("cleaned_videodata.csv", index=False)
 print("Data cleaning completed successfully.")
 
 # -----------------------------
-# Hour 4: Feature Engineering
+# Feature Engineering
 # -----------------------------
 
-# 🔹 FIX column names first (VERY IMPORTANT)
+# 🔹Fixing column names first 
 df.columns = df.columns.str.strip()
 
 # 🔹 Age group feature
@@ -41,12 +41,12 @@ df["work_hours_category"] = pd.cut(
     labels=["Part-time", "Full-time", "Overtime"]
 )
 
-# 🔹 Capital activity (NO row-wise apply → safer & faster)
+# 🔹 Capital activity
 df["capital_activity"] = "None"
 df.loc[df["capital-gain"] > 0, "capital_activity"] = "Gain"
 df.loc[df["capital-loss"] > 0, "capital_activity"] = "Loss"
 
-# 🔹 Save final dataset
+# 🔹 Saving final dataset
 df.to_csv("final_cleaned_videodata.csv", index=False)
 
 print("Feature engineering completed successfully")
